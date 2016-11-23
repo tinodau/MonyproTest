@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="theme-color" content="#3e454c">
+   <title>Data Avenger | Monypro</title>
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Sandstone Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap Datatables -->
+	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+	<!-- Bootstrap social button library -->
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<!-- Bootstrap select -->
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<!-- Bootstrap file input -->
+	<link rel="stylesheet" href="css/fileinput.min.css">
+	<!-- Awesome Bootstrap checkbox -->
+	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+	<!-- Admin Stye -->
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="brand clearfix">
+		<a href="index.html" class="logo"><img src="img/logo.jpg" class="img-responsive" alt=""></a> <span class="menu-btn"><i class="fa fa-bars"></i></span>
+		<ul class="ts-profile-nav">
+			<li class="ts-account">
+				<a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Akun Akun  <i class="fa fa-angle-down hidden-side"></i></a>
+				<ul>
+					<li><a href="#">Kelola Akun </a></li>
+					<!-- <li><a href="#">Ubah Akun</a></li> -->
+					<li><a href="#">Keluar</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="ts-main-content">
+		<nav class="ts-sidebar">
+			<ul class="ts-sidebar-menu">
+				<li class="ts-label">Pencarian</li>
+				<li> <input type="text" class="ts-sidebar-search" placeholder="Search here..."> </li>
+				<li class="ts-label">Main</li>
+				<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+				<li><a href="#"><i class="fa fa-desktop"></i> Monitor</a>
+					<ul>
+						<li><a href="#">Monitor Avenger</a></li>
+						<li><a href="#">Monitor Supervisor</a></li>
+						<li><a href="#">Monitor Agency</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="fa fa-edit"></i> Input</a>
+					<ul>
+						<li><a href="#">Input Data ODP</a></li>
+						<li><a href="#">Input Avenger</a></li>
+						<li><a href="#">Input Supervisor</a></li>
+						<li><a href="#">Input Agency</a></li>
+					</ul>
+				</li>
+				<!-- <li><a href="#"><i class="fa fa-edit"></i> Table</a><ul>
+						<li><a href="#">Table Data ODP</a></li>
+						<li><a href="#">Table Avenger</a></li>
+						<li><a href="#">Table Supervisor</a></li>
+						<li><a href="#">Table Agency</a></li>
+					</ul>
+				</li> -->
+
+				<!-- Account from above -->
+				<ul class="ts-profile-nav">
+					<li class="ts-account">
+						<a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt="">  Akun Saya <i class="fa fa-angle-down hidden-side"></i></a>
+						<ul>
+							<li><a href="#">Kelola Akun </a></li>
+							<!-- <li><a href="#">Edit Account</a></li> -->
+							<li><a href="#">Keluar</a></li>
+						</ul>
+					</li>
+				</ul>
+			</ul>
+		</nav>
+
+		<div class="content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="panel panel-danger">
+							<div class="panel-heading">
+								<h3 class="panel-title">Table Data Avenger</h3>
+							</div>
+							<div class="panel-body">
+                        <form method="get" class="form-horizontal">
+   								<div class="form-group">
+   									<div class="col-sm-12">
+
+                                 <!-- TABLE DATA -->
+                                 <table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+         									<thead>
+         										<tr>
+                                          <th width="15px">NO</th>
+         											<th>Nama Avenger</th>
+                                          <th>Agency</th>
+                                          <th>Supervisor</th>
+                                          <th>Kontak</th>
+         											<th>Alamat Avenger</th>
+                                          <th>Nomor HP</th>
+         										</tr>
+         									</thead>
+         									<tfoot>
+         										<tr>
+                                          <th width="15px">NO</th>
+         											<th>Nama Avenger</th>
+                                          <th>Agency</th>
+                                          <th>Supervisor</th>
+                                          <th>Kontak</th>
+         											<th>Alamat Avenger</th>
+                                          <th>Nomor HP</th>
+         										</tr>
+         									</tfoot>
+                                    <tbody>
+                                       <tr>
+                                          <td>1</td>
+         											<td>Hope Fuentes</td>
+         											<td>Secretary</td>
+         											<td>San Francisco</td>
+         											<td>41</td>
+         											<td>2010/02/12</td>
+         											<td>$109,850</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Vivian Harrell</td>
+         											<td>Financial Controller</td>
+         											<td>San Francisco</td>
+         											<td>62</td>
+         											<td>2009/02/14</td>
+         											<td>$452,500</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Timothy Mooney</td>
+         											<td>Office Manager</td>
+         											<td>London</td>
+         											<td>37</td>
+         											<td>2008/12/11</td>
+         											<td>$136,200</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Jackson Bradshaw</td>
+         											<td>Director</td>
+         											<td>New York</td>
+         											<td>65</td>
+         											<td>2008/09/26</td>
+         											<td>$645,750</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Olivia Liang</td>
+         											<td>Support Engineer</td>
+         											<td>Singapore</td>
+         											<td>64</td>
+         											<td>2011/02/03</td>
+         											<td>$234,500</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Bruno Nash</td>
+         											<td>Software Engineer</td>
+         											<td>London</td>
+         											<td>38</td>
+         											<td>2011/05/03</td>
+         											<td>$163,500</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Sakura Yamamoto</td>
+         											<td>Support Engineer</td>
+         											<td>Tokyo</td>
+         											<td>37</td>
+         											<td>2009/08/19</td>
+         											<td>$139,575</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Thor Walton</td>
+         											<td>Developer</td>
+         											<td>New York</td>
+         											<td>61</td>
+         											<td>2013/08/11</td>
+         											<td>$98,540</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Finn Camacho</td>
+         											<td>Support Engineer</td>
+         											<td>San Francisco</td>
+         											<td>47</td>
+         											<td>2009/07/07</td>
+         											<td>$87,500</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Serge Baldwin</td>
+         											<td>Data Coordinator</td>
+         											<td>Singapore</td>
+         											<td>64</td>
+         											<td>2012/04/09</td>
+         											<td>$138,575</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Zenaida Frank</td>
+         											<td>Software Engineer</td>
+         											<td>New York</td>
+         											<td>63</td>
+         											<td>2010/01/04</td>
+         											<td>$125,250</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Zorita Serrano</td>
+         											<td>Software Engineer</td>
+         											<td>San Francisco</td>
+         											<td>56</td>
+         											<td>2012/06/01</td>
+         											<td>$115,000</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Junior Javascript Developer</td>
+                                          <td>Jennifer Acosta</td>
+         											<td>Edinburgh</td>
+         											<td>43</td>
+         											<td>2013/02/01</td>
+         											<td>$75,650</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Cara Stevens</td>
+         											<td>Sales Assistant</td>
+         											<td>New York</td>
+         											<td>46</td>
+         											<td>2011/12/06</td>
+         											<td>$145,600</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Regional Director</td>
+                                          <td>Hermione Butler</td>
+         											<td>London</td>
+         											<td>47</td>
+         											<td>2011/03/21</td>
+         											<td>$356,250</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Systems Administrator</td>
+                                          <td>Lael Greer</td>
+         											<td>London</td>
+         											<td>21</td>
+         											<td>2009/02/27</td>
+         											<td>$103,500</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Jonas Alexander</td>
+         											<td>Developer</td>
+         											<td>San Francisco</td>
+         											<td>30</td>
+         											<td>2010/07/14</td>
+         											<td>$86,500</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Shad Decker</td>
+         											<td>Regional Director</td>
+         											<td>Edinburgh</td>
+         											<td>51</td>
+         											<td>2008/11/13</td>
+         											<td>$183,000</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Michael Bruce</td>
+         											<td>Javascript Developer</td>
+         											<td>Singapore</td>
+         											<td>29</td>
+         											<td>2011/06/27</td>
+         											<td>$183,000</td>
+         										</tr>
+         										<tr>
+                                          <td>1</td>
+         											<td>Donna Snider</td>
+         											<td>Customer Support</td>
+         											<td>New York</td>
+         											<td>27</td>
+         											<td>2011/01/25</td>
+         											<td>$112,000</td>
+         										</tr>
+         									</tbody>
+                                 </table>
+
+                              </div>
+   								</div>
+                        </form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="clearfix pt pb">
+						<div class="col-md-12"> <em>Thank you for using <a href="http://themestruck.com/theme/harmony/"> Harmony Admin Theme </a> by <a href="http://themestruck.com/">ThemeStruck</a></em> </div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+	<!-- Loading Scripts -->
+	<div class="scripting">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script src="js/dataTables.bootstrap.min.js"></script>
+		<script src="js/Chart.min.js"></script>
+		<script src="js/fileinput.js"></script>
+		<script src="js/chartData.js"></script>
+		<script src="js/main.js"></script>
+	</div>
+</body>
+
+</html>
